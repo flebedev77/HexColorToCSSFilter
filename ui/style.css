@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "DM-Sans";
+    src: url("../fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf");
+}
+* {
+    font-family: "DM-Sans";
+}
