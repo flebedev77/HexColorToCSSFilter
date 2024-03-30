@@ -4,13 +4,26 @@
   "description": "This program can convert hex color values into a CSS filter property",
   "main": "main.js",
   "scripts": {
-    "start": "npx electron .",
-    "install": "npm install --save-dev electron"
+    "run": "electron-forge start",
+    "install": "npm install --save-dev electron & npm install --save-dev @electron-forge/cli",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "start": "electron-forge start"
   },
   "keywords": [],
   "author": "flebedev77",
   "license": "UNLICENSED",
   "devDependencies": {
+    "@electron-forge/cli": "^7.3.1",
+    "@electron-forge/maker-deb": "^7.3.1",
+    "@electron-forge/maker-rpm": "^7.3.1",
+    "@electron-forge/maker-squirrel": "^7.3.1",
+    "@electron-forge/maker-zip": "^7.3.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.3.1",
+    "@electron-forge/plugin-fuses": "^7.3.1",
     "electron": "^29.1.6"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
   }
 }
