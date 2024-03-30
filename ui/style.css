@@ -2,6 +2,131 @@
     font-family: "DM-Sans";
     src: url("../fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf");
 }
+
 * {
     font-family: "DM-Sans";
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    height: 100vh;
+}
+
+.content {
+    display: block;
+    padding-top: 30px;
+}
+
+.sidebar {
+    background: rgb(65, 158, 26);
+    margin: 0;
+    max-width: 400px;
+}
+
+.pixel {
+    background-color: #000;
+    width: 50px;
+    height: 50px;
+    margin-inline: auto;
+}
+
+.filterDetail {
+    font-family: "Consolas", "Menlo", "Ubuntu Mono", monospace;
+}
+
+code {
+    background: lightgray;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+
+.target-input-container {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.execute {
+    background: rgb(65, 158, 26);
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 9px;
+    opacity: 0.9;
+    transition-property: opacity;
+    transition-duration: 0.1s;
+}
+
+.execute:hover {
+    opacity: 1;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container > label {
+    margin-bottom: -5px;
+    z-index: 100;
+    background: white;
+    padding: 2px;
+    padding-block: 1px;
+    margin-left: 5px;
+    font-size: 10px;
+    width: max-content;
+}
+
+input {
+    border-radius: 0;
+    border: 1px solid black;
+    outline: none;
+    height: 23px;
+}
+
+.pixelContainer {
+    display: flex;
+    background: rgb(250, 250, 250);
+    width: max-content;
+    gap: 2px;
+}
+
+.pixelContainer > span {
+    background: white;
+    padding: 10px;
+}
+
+.pixelContainer > span > p {
+    text-align: center;
+    margin: 0;
+}
+
+#info-button {
+    width: 25px;
+    height: 25px;
+    filter: invert(92%) sepia(100%) saturate(2907%) hue-rotate(180deg) brightness(118%) contrast(100%);
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+#info-button:hover {
+    filter: invert(0%) sepia(88%) saturate(13%) hue-rotate(325deg) brightness(89%) contrast(100%);
+}
+
+.sidebar > h1 {
+    text-align: center;
+    color: white;
 }

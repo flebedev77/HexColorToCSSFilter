@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HCTCSSF</title>
     <link rel="stylesheet" href="ui/style.css">
-    <link rel="shortcut icon" href="ui/icons/palette.png" type="image/x-icon">
+    <link rel="shortcut icon" href="ui/icons/3d/icon_resized.png" type="image/x-icon">
 </head>
+
 <body>
-    <h1>Hello Electron!</h1>
+    <main>
+        <div class="sidebar">
+            <h1>HCTCSSF</h1>
+            <img draggable="false" src="ui/icons/info.png" id="info-button"/>
+        </div>
+        <div class="content">
+            <div class="target-input-container">
+                <div class="input-container">
+                    <label>Target hex color</label>
+                    <input class="target" type="text" placeholder="target hex" value="#00a4d6" />
+                </div>
+
+                <button class="execute">Compute Filters</button>
+            </div>
+
+            <div class="pixelContainer">
+                <span>
+                    <p>Real</p>
+                    <div class="pixel realPixel"></div>
+                </span>
+                <span>
+                    <p>Filtered</p>
+                    <div class="pixel filterPixel"></div>
+                </span>
+            </div>
+
+            <p class="filterDetail"></p>
+            <p class="lossDetail"></p>
+        </div>
+    </main>
+    <script src="libs/jquery.min.js"></script>
     <script src="ui/script.js"></script>
 </body>
+
 </html>
